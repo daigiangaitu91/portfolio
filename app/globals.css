@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  color: #e8e8f0;
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Nav ─────────────────────────────────────────── */
+.nav-link:hover { color: #fff !important; }
+.resume-btn:hover { background: #3d5ae6 !important; }
+.mobile-nav-link:hover { color: #fff !important; background: rgba(255,255,255,0.05) !important; }
+.mobile-resume-btn:hover { background: #3d5ae6 !important; }
+
+/* ── Buttons ─────────────────────────────────────── */
+.primary-btn:hover  { background: #3d5ae6 !important; transform: translateY(-1px); }
+.outline-btn:hover  { border-color: rgba(255,255,255,0.5) !important; }
+
+/* ── Cards ───────────────────────────────────────── */
+.card-hover:hover   { border-color: rgba(79,110,247,0.4) !important; }
+.skill-card:hover   { border-color: rgba(79,110,247,0.4) !important; transform: translateY(-4px); }
+.social-icon:hover  { background: rgba(255,255,255,0.12) !important; }
+
+/* ── Form ────────────────────────────────────────── */
+.form-input:focus   { border-color: #4f6ef7 !important; }
+.input-error        { border-color: #e05454 !important; background: rgba(224,84,84,0.06) !important; }
+
+/* ── Animations ──────────────────────────────────── */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+.fade-in-right {
+  animation: fadeInRight 0.8s ease 0.2s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Timeline ────────────────────────────────────── */
+.timeline-item:last-child { padding-bottom: 0; }
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-section       { flex-direction: column !important; padding: 100px 24px 60px !important; }
+  .hero-image-wrap    { flex: unset !important; width: 100% !important; }
+  .skills-grid        { grid-template-columns: repeat(3, 1fr) !important; }
+  .contact-grid       { grid-template-columns: 1fr !important; gap: 48px !important; }
+  .philosophy-grid    { grid-template-columns: 1fr !important; }
+  
+  /* Mobile Navbar */
+  .nav-container      { padding: 0 24px !important; }
+  .nav-links-desktop  { display: none !important; }
+  .mobile-menu-btn    { display: flex !important; }
+  .mobile-menu        { display: none !important; }
+  .mobile-menu-open   { display: block !important; }
+}
