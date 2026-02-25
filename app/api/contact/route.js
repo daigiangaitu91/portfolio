@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   },
 });
-
+console.log("Email transporter configured with host:", process.env.SMTP_HOST);
 function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
