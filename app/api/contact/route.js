@@ -8,7 +8,7 @@ import nodemailer from "nodemailer";
 // SMTP_PASS      – your email password or app-specific password
 // CONTACT_TO     – the inbox that receives the contact messages
 // ──────────────────────────────────────────────────────────────────────────
-
+console.log("Email transporter configured with host:", process.env.SMTP_HOST);
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT) || 587,
@@ -18,7 +18,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   },
 });
-console.log("Email transporter configured with host:", process.env.SMTP_HOST);
 function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
