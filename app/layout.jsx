@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "kevin.dev — Full-Stack Software Engineer",
-  description: "Kevin is a Software Engineer building scalable and elegant web solutions.",
+  title: "kevin.dev — Software Engineer",
+  description: "Kevin is Software Engineer delivering scalable business solutions using open-source technologies",
 };
 
 export default function RootLayout({ children }) {

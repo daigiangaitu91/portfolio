@@ -14,25 +14,46 @@ const SKILLS = [
 
 const EXPERIENCE = [
   {
-    title: "Senior Full-Stack Engineer",
-    company: "TechFlow Solutions Inc.",
-    period: "2021 — Present",
+    title: "Senior Software Engineer",
+    company: "Grevo",
+    period: "2017 — Present",
     current: true,
-    desc: "Leading a team of 5 engineers to modernize a legacy fintech platform. Reduced infrastructure costs by 40% through AWS migration and implemented microservices architecture using Go and Kubernetes.",
+    desc: "Gundam is web game with over 2 million players in Japan. I lead the development of new features, performance optimization, and code quality improvements. Collaborate closely with PM, designers, and other engineers to deliver engaging game experiences while ensuring scalability and maintainability.",
+    main_responsibilities: [
+      "Analysis, design, development and implementation of web game Gundam for Japan using framework Ethna and Smarty template",
+      "Develop support tools for PM can manage game's events, extract data(users/battle/contest).",
+      "Deploy to multiple servers.",
+      "Check traffic of servers and monitoring logs in game events periods with SumoLogic.",
+      "Code review on all pull requests of team.",
+      "Research and implement new technologies to improve performance and scalability."
+    ]
   },
   {
-    title: "Software Engineer",
-    company: "BrightDigital Media",
-    period: "2018 — 2021",
+    title: "Senior PHP Developer",
+    company: "IT Consultis",
+    period: "2016 — 2017",
     current: false,
-    desc: "Developed high-traffic web applications for Fortune 500 clients. Focused on performance optimization, SEO best practices, and building reusable UI component libraries with React and TypeScript.",
+    desc: "IT Consultis is outsourcing company, specializes developing, as welas providing information technology services to customers in China,France and Singapore and developing application use WebChat.",
+    main_responsibilities: [
+      "Analyze requests from PM/Leader and estimate for these tasks.",
+      "Design database, create project structure and develop features for new projects.",
+      "Maintenance on old projects: update old features, develop new modules for these projects.",
+      "Implement function with Wechat.",
+      "Setup, config and deploy server."
+    ]
   },
   {
-    title: "Junior Web Developer",
-    company: "StartupX Launchpad",
-    period: "2016 — 2018",
+    title: "PHP Developer & Senior PHP Developer",
+    company: "Sutrix Solution",
+    period: "2013 — 2016",
     current: false,
-    desc: "Contributed to rapid prototyping of MVP products for early-stage startups. Gained extensive experience in PHP, JavaScript, and responsive CSS frameworks.",
+    desc: "It is outsourcing company, specializes developing, as wel asproviding information technology services to customers in USA,France and Singapore",
+    main_responsibilities: [
+      "Analyze requests from PM/Leader and estimate for these tasks.",
+      "Design database, create project structure and develop features for new projects.",
+      "Maintenance on old projects: update old features, develop new modules for these projects.",
+      "Support solutions for other members.",
+    ]
   },
 ];
 
@@ -41,6 +62,7 @@ const PHILOSOPHY = [
   "User-Centric Design",
   "Continuous Learning",
   "Collaborative Problem Solving",
+  "Performance optimization",
 ];
 
 export default function AlexPortfolio() {
@@ -220,7 +242,7 @@ export default function AlexPortfolio() {
             ✦ AVAILABLE FOR NEW OPPORTUNITIES
           </p>
           <h1 style={{ fontSize: "clamp(2.4rem, 5vw, 3.6rem)", fontWeight: 800, lineHeight: 1.12, color: "#fff", marginBottom: 24, letterSpacing: "-0.02em" }}>
-            Hi, I am <span style={{ color: "#4f6ef7" }}>Kevin</span>,a Software Engineer delivering scalable business solutions using open-source technologies
+            Hi, I am <span style={{ color: "#4f6ef7" }}>Kevin</span>, a Software Engineer
           </h1>
           <p style={{ fontSize: 16, color: "#8892a4", maxWidth: 420, marginBottom: 36 }}>
             I specialize in building robust backend systems and intuitive frontend experiences using modern architectures and industry best practices.
@@ -251,7 +273,7 @@ export default function AlexPortfolio() {
       <section id="about" style={{ padding: "100px 0", backgroundColor: "#0d0d14"  }}>
         <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 32px" }}>
           <h2 style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)", fontWeight: 700, color: "#fff", marginBottom: 20, letterSpacing: "-0.02em" }}>About Me</h2>
-          <p style={{ color: "#8892a4", fontSize: 15, maxWidth: 560, marginBottom: 40 }}>
+          <p style={{ color: "#8892a4", fontSize: 15, maxWidth: 700, marginBottom: 40 }}>
             I am a Software Engineer with over 10 years of experience in designing, developing, and delivering scalable business
 solutions using open-source technologies. Experienced across the full software development lifecycle, with a strong
 focus on system design, performance optimization, and code quality.Proven ability to solve complex technical
@@ -259,10 +281,12 @@ problems, research and adopt new technologies, and collaborate effectively with 
 pursuing growth toward a Technical Lead role with a commitment to clear and effective technical communication.
           </p>
           <h3 style={{ fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Core Philosophy</h3>
-          <div className="philosophy-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, maxWidth: 500 }}>
+          <div className="philosophy-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12, maxWidth: 700 }}>
             {PHILOSOPHY.map((p) => (
               <div key={p} className="card-hover"
-                style={{ display: "flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, padding: "14px 16px", transition: "border-color 0.2s" }}>
+                style={{ display: "flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,0.04)", 
+                border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10,
+                 padding: "14px 16px", transition: "border-color 0.2s" }}>
                 <span style={{ color: "#4f6ef7", fontSize: 16, fontWeight: 700 }}>✓</span>
                 <span style={{ fontSize: 14, color: "#c8cfe0", fontWeight: 500 }}>{p}</span>
               </div>
@@ -314,6 +338,12 @@ pursuing growth toward a Technical Lead role with a commitment to clear and effe
                   </div>
                   <p style={{ color: "#4f6ef7", fontSize: 14, fontWeight: 500, marginBottom: 12 }}>{e.company}</p>
                   <p style={{ color: "#8892a4", fontSize: 14, lineHeight: 1.7 }}>{e.desc}</p>
+                  <p style={{ color: "#8892a4", fontSize: 14, lineHeight: 1.7 }}>Main Responsibilities:</p>
+                  <ul style={{ color: "#8892a4", fontSize: 14, lineHeight: 1.7, paddingLeft: 20 }}>
+                    {e.main_responsibilities.map((resp, idx) => (
+                      <li key={idx}>{resp}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
