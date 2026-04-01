@@ -220,7 +220,7 @@ export default function AlexPortfolio() {
             ✦ AVAILABLE FOR NEW OPPORTUNITIES
           </p>
           <h1 style={{ fontSize: "clamp(2.4rem, 5vw, 3.6rem)", fontWeight: 800, lineHeight: 1.12, color: "#fff", marginBottom: 24, letterSpacing: "-0.02em" }}>
-            Hi, I am <span style={{ color: "#4f6ef7" }}>Kevin</span>, a Software Engineer building scalable and elegant web solutions.
+            Hi, I am <span style={{ color: "#4f6ef7" }}>Kevin</span>,a Software Engineer delivering scalable business solutions using open-source technologies
           </h1>
           <p style={{ fontSize: 16, color: "#8892a4", maxWidth: 420, marginBottom: 36 }}>
             I specialize in building robust backend systems and intuitive frontend experiences using modern architectures and industry best practices.
@@ -252,7 +252,11 @@ export default function AlexPortfolio() {
         <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 32px" }}>
           <h2 style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)", fontWeight: 700, color: "#fff", marginBottom: 20, letterSpacing: "-0.02em" }}>About Me</h2>
           <p style={{ color: "#8892a4", fontSize: 15, maxWidth: 560, marginBottom: 40 }}>
-            I am a passionate software engineer with a strong foundation in both frontend and backend technologies. I enjoy solving complex problems and building efficient, user-centric applications. With a background in computer science and years of hands-on experience, I bring a holistic perspective to every project I work on.
+            I am a Software Engineer with over 10 years of experience in designing, developing, and delivering scalable business
+solutions using open-source technologies. Experienced across the full software development lifecycle, with a strong
+focus on system design, performance optimization, and code quality.Proven ability to solve complex technical
+problems, research and adopt new technologies, and collaborate effectively with cross-functional teams. Actively
+pursuing growth toward a Technical Lead role with a commitment to clear and effective technical communication.
           </p>
           <h3 style={{ fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 20 }}>Core Philosophy</h3>
           <div className="philosophy-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, maxWidth: 500 }}>
